@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPages_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Inventory</title>
+    <link href="../Styles/Styles.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <header> 
+            <table>
+                <tr>
+                    <td>
+                        <asp:DropDownList ID="DropDownListSales" runat="server" AutoPostBack="True" Font-Bold="True"><asp:ListItem>SALES</asp:ListItem>
+                            <asp:ListItem>View Sales</asp:ListItem>
+                            <asp:ListItem>Create Sale</asp:ListItem>
+                        </asp:DropDownList>  
+                       <asp:DropDownList ID="DropDownListCustomer" runat="server" AutoPostBack="True" Font-Bold="True" OnSelectedIndexChanged="DropDownListCustomer_SelectedIndexChanged"><asp:ListItem>CUSTOMERS</asp:ListItem>
+                           <asp:ListItem>View Customer</asp:ListItem>
+                           <asp:ListItem>Modify Customer</asp:ListItem>
+                           <asp:ListItem>Add Customer</asp:ListItem>
+                           <asp:ListItem>Delete Customer</asp:ListItem>
+                           <asp:ListItem>Search by Last Name</asp:ListItem>
+                           <asp:ListItem>Search by Id</asp:ListItem>
+                        </asp:DropDownList>                                                  
+                       <asp:DropDownList ID="DropDownListInventory" runat="server" AutoPostBack="True" Font-Bold="True"><asp:ListItem>INVENTORY</asp:ListItem>
+                           <asp:ListItem>View Inventory</asp:ListItem>
+                           <asp:ListItem>Modify Vehicle</asp:ListItem>
+                           <asp:ListItem>Add Vehicle</asp:ListItem>
+                           <asp:ListItem>Delete Vehicle</asp:ListItem>
+                        </asp:DropDownList>                           
+                       <asp:DropDownList ID="DropDownListOrder" runat="server" AutoPostBack="True" Font-Bold="True"><asp:ListItem>ORDER</asp:ListItem>
+                           <asp:ListItem>View Order</asp:ListItem>
+                           <asp:ListItem>Modify Order</asp:ListItem>
+                           <asp:ListItem>Delete Order</asp:ListItem>
+                        </asp:DropDownList>
+                       <asp:DropDownList ID="DropDownListLogin" runat="server" AutoPostBack="True" Font-Bold="True"><asp:ListItem>LOGIN</asp:ListItem>
+                           <asp:ListItem>Logout</asp:ListItem>
+                           <asp:ListItem>Change Password</asp:ListItem>
+                        </asp:DropDownList>   
+                       
+                      
+
+                        
+                    </td>
+
+                </tr>
+            </table>
+            
+        </header>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        
+    </div>
+    </form>
+    <footer>Copyright &copy <%=DateTime.Now.Year %> Toyota Vehicle Tracking System</footer>
+</body>
+</html>
+

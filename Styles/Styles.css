@@ -1,0 +1,41 @@
+* 
+{
+    font-size: large;
+
+}
+
+table
+{
+    margin:auto;
+}
+
+header
+{
+    text-align: center;
+   font-size: xx-large;
+       color: blue;
+}
+
+nav
+{
+  background-color: black;
+  width: 100%;
+}
+
+section#MainContent
+{
+
+  float: left;
+  border-style: solid;
+  border-width: 3px;
+}
+
+
+footer
+{
+  background-color: lightgreen;
+  width: 100%;
+  text-align: center;
+  font:small;
+  clear: both;
+}
