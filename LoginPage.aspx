@@ -21,7 +21,7 @@
     <form id="form1" runat="server">
 
 
-     <header>Toyota Vehicle Tracking System -- OLOLO TRATATA</header>  
+     <header>Toyota Vehicle Tracking System</header>  
         <p></p> 
     <div>
         <table>
