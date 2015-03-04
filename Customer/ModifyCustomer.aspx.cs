@@ -11,4 +11,8 @@ public partial class MasterPages_ModifyCustomer : System.Web.UI.Page
     {
 
     }
+    protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+    }
 }
