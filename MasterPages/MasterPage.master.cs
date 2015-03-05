@@ -11,7 +11,7 @@ public partial class MasterPages_MasterPage : System.Web.UI.MasterPage
     protected void Page_Load(object sender, EventArgs e)
     {
         if (IsPostBack == false)
-         prevLevel = (string)Session["Level"];
+        prevLevel = (string)Session["Level"];
     }
 
 
@@ -43,6 +43,16 @@ public partial class MasterPages_MasterPage : System.Web.UI.MasterPage
         else if (selectIndex == 6)
         {
             Response.Redirect("~/Customer/IdSearch.aspx");
+        }
+    }
+
+    protected void DropDownListInventory_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        int selectIndex = DropDownListInventory.SelectedIndex;
+
+        if (selectIndex == 1)
+        {
+            Response.Redirect("~/Inventory/ViewInventory.aspx");
         }
     }
 }

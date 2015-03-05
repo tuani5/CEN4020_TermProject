@@ -10,10 +10,8 @@
         .auto-style1 {
             width: 800px;
             height: 600px;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            
+            display: block;
+            margin: auto;
         }
     </style>
 </head>
@@ -21,11 +19,10 @@
     <form id="form1" runat="server">
 
 
-     <header>Toyota Vehicle Tracking System</header>  
-        <p></p> 
+    <header>Toyota Vehicle Tracking System</header>
+           
     <div>
         <table>
-            <tr><td>Please enter.</td></tr>
             <tr>
                 <td>
                     <asp:TextBox ID="TextBox_userid" runat="server" TabIndex="1"></asp:TextBox>
@@ -37,7 +34,7 @@
                     <asp:TextBox ID="TextBox_password" runat="server" TabIndex="2" TextMode="Password"></asp:TextBox>
                 </td>
                 <td></td>
-                <td><asp:Button ID="Button_ok" runat="server" Text="OK" TabIndex="0" OnClick="Button_ok_Click" /></td><td></td>
+                <td><asp:Button ID="Button_ok" runat="server" Text="Login" TabIndex="0" OnClick="Button_ok_Click" /></td><td></td>
                 <td><asp:Label ID="Label_output" runat="server"></asp:Label></td>
             </tr>
 
@@ -50,7 +47,5 @@
         </table>
     </div>
     </form>
-    <p>
-        <img class="auto-style1"  src="Images/Toyota.png"/></p>
 </body>
 </html>
